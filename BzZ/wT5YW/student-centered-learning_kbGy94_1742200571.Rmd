@@ -24,7 +24,6 @@ library(grid)
 The article of the data graphics, which I decided to recreate can be accessed via this link:
 https://fivethirtyeight.com/features/women-in-comic-books/
 
-The data visualisation I recreated is the following:
 ```{r}
 include_graphics("1.png")
 ```
