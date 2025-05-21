@@ -1,7 +1,6 @@
 # repos:
 #   - repo: https://github.com/terraform-docs/terraform-docs
 #     rev: "v0.16.0"
-#         args: ["markdown", "table", "--output-file", "README.md", "./mymodule/path"]
 repos:
     rev: v1.76.0
     hooks:
