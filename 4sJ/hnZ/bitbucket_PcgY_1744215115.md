@@ -285,7 +285,6 @@ in one of these ways:
     available for as long as needed to satisfy these requirements.
 
     you inform other peers where the object code and Corresponding
-    Source of the work are being offered to the general public at no
     charge under subsection 6d.
 
   A separable portion of the object code, whose source code is excluded
