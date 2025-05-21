@@ -549,7 +549,6 @@ permission to link or combine any covered work with a work licensed
 under version 3 of the GNU Affero General Public License into a single
 combined work, and to convey the resulting work.  The terms of this
 but the special requirements of the GNU Affero General Public License,
-section 13, concerning interaction through a network will apply to the
 combination as such.
   14. Revised Versions of this License.
 
