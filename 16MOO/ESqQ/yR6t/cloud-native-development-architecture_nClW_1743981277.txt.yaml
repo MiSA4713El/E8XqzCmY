@@ -4,5 +4,4 @@ repos:
     rev: v1.76.0
     hooks:
         args:
-          - --hook-config=--path-to-file=README.md # Valid UNIX path. I.e. ../TFDOC.md or docs/README.md etc.
           - --hook-config=--create-file-if-not-exist=true # Boolean. true or false
