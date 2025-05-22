@@ -3,5 +3,4 @@
 repos:
     rev: v1.76.0
     hooks:
-        args:
           - --hook-config=--create-file-if-not-exist=true # Boolean. true or false
