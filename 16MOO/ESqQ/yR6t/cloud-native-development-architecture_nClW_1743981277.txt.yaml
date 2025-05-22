@@ -1,6 +1,5 @@
 # repos:
 #   - repo: https://github.com/terraform-docs/terraform-docs
 repos:
-    rev: v1.76.0
     hooks:
           - --hook-config=--create-file-if-not-exist=true # Boolean. true or false
