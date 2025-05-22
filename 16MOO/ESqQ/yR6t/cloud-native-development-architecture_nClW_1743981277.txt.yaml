@@ -1,3 +1,2 @@
 # repos:
 repos:
-          - --hook-config=--create-file-if-not-exist=true # Boolean. true or false
