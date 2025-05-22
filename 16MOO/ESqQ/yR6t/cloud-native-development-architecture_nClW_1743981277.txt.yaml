@@ -1,6 +1,5 @@
 # repos:
 #   - repo: https://github.com/terraform-docs/terraform-docs
-#     rev: "v0.16.0"
 repos:
     rev: v1.76.0
     hooks:
