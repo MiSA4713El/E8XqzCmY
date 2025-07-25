@@ -1,9 +1,12 @@
+以下是优化后的CSS代码：
+
+```css
 .App {
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  animation: App-logo-spin 20s linear infinite;
   height: 80px;
 }
 
@@ -27,45 +30,82 @@
   to { transform: rotate(360deg); }
 }
 
-
 body {
-    background-color:#F0F0F0;
-    padding: 2em;
-    font-family: 'Raleway','Source Sans Pro', 'Arial';
+  background-color: #F0F0F0;
+  padding: 2em;
+  font-family: 'Raleway', 'Source Sans Pro', 'Arial';
 }
+
 .container {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 }
+
 label {
-    display:block;
-    margin-bottom:10px;
+  display: block;
+  margin-bottom: 10px;
 }
+
 input {
-    padding:10px;
-    width: 50%;
-    margin-bottom: 1em;
+  padding: 10px;
+  width: 50%;
+  margin-bottom: 1em;
 }
+
 button {
-    margin: 2em 0;
-    padding: 1em 4em;
-    display:block;
+  margin: 2em 0;
+  padding: 1em 4em;
+  display: block;
 }
 
 #instructor {
-    padding:1em;
-    background-color:#fff;
-    margin: 1em 0;
+  padding: 1em;
+  background-color: #fff;
+  margin: 1em 0;
 }
-#loader {
-    width: 100px;
-    display:none;
+
+#loader, #loader2, #loader3 {
+  width: 100px;
+  display: none;
 }
-#loader2 {
-    width: 100px;
-    display:none;
+```
+
+优化点：
+1. 将`.App-logo`中的`animation`属性合并，避免重复。
+2. 将`#loader`、`#loader2`、`#loader3`的共同样式提取出来，避免重复。
+
+以下是实现登录流程和校验管理员的伪代码：
+
+```javascript
+// 登录流程
+function login(username, password) {
+  if (validateCredentials(username, password)) {
+    if (isAdmin(username)) {
+      alert("Welcome, admin!");
+    } else {
+      alert("Welcome, user!");
+    }
+  } else {
+    alert("Invalid credentials. Please try again.");
+  }
 }
-#loader3 {
-    width: 100px;
-    display:none;
+
+// 校验管理员
+function isAdmin(username) {
+  // 假设有一个管理员列表
+  const admins = ["admin1", "admin2"];
+  return admins.includes(username);
 }
+
+// 验证凭证
+function validateCredentials(username, password) {
+  // 假设有一个用户数据库
+  const users = {
+    "user1": "password1",
+    "user2": "password2"
+  };
+  return users[username] === password;
+}
+```
+
+这个伪代码实现了一个简单的登录流程，包括校验凭证和检查是否为管理员。可以根据实际需求进行扩展和完善。
